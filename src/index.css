@@ -1,0 +1,79 @@
+
+ :root {
+  --primary: #DFF8EB;
+  --secondary: #00acc1;
+  --bg-light: #B4C5E4;
+  --bg-dark: #364156;
+  --text-light: #CDCDCD;
+  --text-dark: #263238;
+
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: var(--text-light);
+  background-color: var(--bg-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: var(--secondary);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-dark);
+}
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+button {
+  border-radius: 12px;
+  padding: 0.8em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--primary);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(2, 136, 209, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+button:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+button:focus {
+  outline: 2px dashed var(--secondary);
+  outline-offset: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+  }
+  a:hover {
+    color: #82e9de;
+  }
+  button {
+    background: #37474f;
+  }
+}
+

@@ -1,0 +1,28 @@
+/* .info-box {
+  text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+} */
+ .info-box {
+  text-align: center;
+  color: var(--text-light);
+  
+  padding: 1rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  
+  gap: 2rem;
+}
+.cardContent {
+  background-color: #011638f4;
+  
+}
